@@ -52,46 +52,6 @@ footer {
     background-color: orange;
 }
 
-.black-border {
-    border-color: black;
-    border-style: solid;
-    border-width: 5px;
-}
-
-.foto-opmaak {
-    padding: 2%;
-    background-color: grey;
-}
-
-.foto-afbeelding {
-    width: 80%;
-    text-align: center;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-.text-blokje {
-    margin: 3%;
-    padding-left: 3%;
-    padding-right: 3%;
-    background-color: orange;
-}
-.text-subblokje {
-    padding: 3%;
-    background-color: rgba(22,22,22,.3);
-    margin: 3%;
-}
-
-.containertje {
-    width: 100%;
-}
-
-.zijbalk {
-    padding-left: 2%;
-    padding-right: 2%;
-    width: 96%;
-}
-
 .formulier {
     width: 100%;
 }
@@ -108,24 +68,23 @@ footer {
     margin-left: -2px;
 }
 
+.afronding {
+    margin-top: 4vw;
+    margin-bottom: 6vw;
+    width: 100%;
+    padding-left: 4%;
+
+}
+.spacer {
+    padding-left: 2%;
+}
+
 .btn-default {
     background-color: azure;
     color: black;
     font-size: 1.6rem;
 }
 
-#green-background {
-    background-color: green;
-}
-
-#hobby {
-    width: 100%;
-}
-
-#hobbydetails {
-    width: 90%;
-    margin: 0 auto;
-}
 
 @media  (min-width:1024px) {
     body {
@@ -142,36 +101,4 @@ footer {
         display: flex;
     }
 
-    #hobby {
-        width: 50%;
-        padding: 5%;
-        margin: 0 auto;
-    }
-
-    #hobbydetails {
-        width: 50%;
-        padding-right: 2vw;
-    }
-
-    .containertje {
-        display: flex;
-    }
-
-    .zijbalk {
-        float: right;
-        margin-right: 0;
-        padding: 2%;
-        width: 50%;
-    }
-    .foto-opmaak {
-        padding: 10px;
-        margin: 3%;
-        background-color: grey;
-    }
-
-    .foto-afbeelding {
-        width: 100%;
-        max-width: 150px;
-        height: auto;
-    }
 }

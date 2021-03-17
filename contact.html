@@ -11,13 +11,11 @@
     <ul>
         <li>nav-link-1</li>
         <li>nav-link-2</li>
-        <li><a href="about.html">Klik hier om naar de about pagina te gaan</a></li>
-        <li><a href="index.html">HOME</a></li>
     </ul>
 </nav>
 <main>
     <section class="standaard-sectie">
-        <form name="contactform" method="POST" data-netlify="true">
+        <form name="chefs_form" method="POST" data-netlify="true">
             <div class="formulier">
                 <div class="invul-veld">
                     <label class="label" for="naam">Naam:</label>
@@ -25,17 +23,74 @@
                 </div>
                 <div class="invul-veld">
                     <label class="label" for="email">Email:</label>
-                    <input id="email" name="email" type="email" placeholder="Vul hier je email adres in"/>
+                    <input id="email" name="email" type="email" placeholder="Vul hier je emailadres in"/>
                 </div>
                 <div class="invul-veld">
-                    <label class="label" for="textveld">Je vraag:</label>
-                    <textarea id="textveld" name="textveld" class="tekst-invul-veld" cols="35" rows="5" placeholder="Wat wil je weten?"></textarea>
+                    <label class="label" for="telefoon">Telefoonnummer:</label>
+                    <input id="telefoon" name="telefoon" type="tel" placeholder="Vul hier je telefoonnummer in"/>
                 </div>
                 <div class="invul-veld">
-                    <div class="label"></div>
-                    <input class="btn-default" type="submit" name="Verzenden"/>
+                    <label class="label" for="leeftijd">Leeftijd:</label>
+                    <input id="leeftijd" name="leeftijd" type="number" placeholder="Vul hier je leeftijd in"/>
+                </div>
+                <div class="invul-veld">
+                    <label class="label" for="geboortedatum">Geboortedatum:</label>
+                    <input id="geboortedatum" name="geboortedatum" type="date"
+                           placeholder="Vul hier je geboortedatum in"/>
+                </div>
+                <div class="invul-veld">
+                    <label class="label">Geslacht:</label><br>
+                    <span>
+                    <input class="nieuweregel" id="man" name="geslacht" type="radio" value="man">
+                    <label for="man">Man</label><br>
+                    <input class="nieuweregel" id="vrouw" name="geslacht" type="radio" value="vrouw">
+                    <label for="vrouw">Vrouw</label><br>
+                    <input class="nieuweregel" id="onbekend" name="geslacht" type="radio" value="onbekend">
+                    <label for="onbekend">Onbekend</label>
+                    </span>
+                </div>
+                <div class="invul-veld">
+                    <label class="label">Favoriete keuken:</label><br>
+                    <span>
+                    <input class="nieuweregel" id="frans" name="favokeuken" type="checkbox" value="frans">
+                    <label for="frans">Frans</label><br>
+                        <input class="nieuweregel" id="italiaans" name="favokeuken" type="checkbox" value="italiaans">
+                        <label for="italiaans">Italiaans</label><br>
+                    <input class="nieuweregel" id="spaans" name="favokeuken" type="checkbox" value="spaans">
+                    <label for="spaans">Spaans</label><br>
+                    <input class="nieuweregel" id="arabisch" name="favokeuken" type="checkbox" value="arabisch">
+                    <label for="arabisch">Arabisch</label><br>
+                    </span>
+                </div>
+                <div class="invul-veld">
+                    <label for="favokleur" class="label">Favoriete kleur voor je short:</label>
+                    <input class="nieuweregel" id="favokleur" name="favokleur" type="color">
+                </div>
+                <div class="invul-veld">
+                    <label class="label" for="biografie">Biografie:</label>
+                    <textarea id="biografie" name="biografie" class="tekst-invul-veld" cols="35" rows="8"
+                              placeholder="Vertel iets over jezelf"></textarea>
+                </div>
+                <div class="invul-veld">
+                    <label class="label" for="recept">Upload je meest recente recept:</label>
+                    <input id="recept" name="recept" type="file">
+                </div>
+
+                <div class="invul-veld">
+                    <label for="urlwebsite" class="label">Link naar je website:</label>
+                    <input class="nieuweregel" id="urlwebsite" name="urlwebsite" type="url" placeholder="https://www.mijnwebsite.nl">
                 </div>
             </div>
+
+
+                <div class="afronding">
+                    <span class="spacer">
+                <input class="btn-default" type="submit" name="Verzenden"/>
+                    </span>
+                    <span class="spacer">
+                <input class="btn-reset" type="reset" name="Reset formulier"/>
+                </span>
+                </div>
         </form>
     </section>
 </main>
